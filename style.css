@@ -1,30 +1,117 @@
-body, h1 {
-  margin: 0;
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+html {
+  scroll-behavior: smooth; 
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: 'Helvetica', 'Arial', sans-serif;
+  
 }
 
-header {
-  height: 100vh;
-  background-color: #eee;
-  background-image: url(https://pictures.s3.yandex.net/frontend-developer/free-course/cover.jpg);
-  background-size: cover;
-  background-position: center;
-  text-align: center;
+.header {
+  background-color: rgb(130, 153, 133);
 }
 
-h1 {
-  font-size: 140px;
+.main {
+margin-left: auto;
+margin-right: auto;
+
+
+}
+
+.footer {
+  background-color: rgb(130, 153, 133);
+}
+
+.container {
+  max-width: 1440px;
+    padding: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.nav {
+
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.nav-item {
+
+}
+
+.nav-link  {
+  transition: .3s;
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
   color: white;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding-top: 100px;
 }
 
-div {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, .5);
+a:hover {
+  color: #5ad00c;
+}
+
+
+
+.section {
+  width: 50%;
+  font-weight: 400;
+  line-height: 1.5;
+
+}
+
+.section-img {
+  width: 50%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+
+  display: flex;
+  flex-direction: column;
+}
+.section-title {
+  
+}
+
+.textcols {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.textcols-item {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	height: 48%;
+  margin-left: 150px;
+}
+.textcols-item + .textcols-item {
+	margin-left: 4%;
 }
